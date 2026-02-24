@@ -14,6 +14,7 @@ def chs(bytes):
      cylinders = math.floor(heads/255)
      heads = heads - cylinders * 255
      print("\n",cylinders,"C ",heads,"H ",sectors,"S + ",remaining,"B")
+	 return (cylinders,heads,sectors,remaining)
 
 # Bytes to MiB ( factor of 1024 )
 def b2mib(bytes):
